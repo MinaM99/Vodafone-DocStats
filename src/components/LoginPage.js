@@ -15,7 +15,7 @@ const LoginPage = ({ onLogin }) => {
     setError(''); // Clear any previous error message when login starts
 
     const loginUrl = `${config.documentumUrl}/dctm-rest/repositories/${config.repositoryName}`;
-    console.log(username, password);
+    //console.log(username, password);
     try {
       const response = await fetch(loginUrl, {
         method: 'GET',
